@@ -1,5 +1,7 @@
 #pragma once
 
+#include "SpreadSheetCell.h"
+
 #include <iostream>
 
 class SpreadSheet 

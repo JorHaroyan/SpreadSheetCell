@@ -81,7 +81,7 @@ void SpreadSheet::addCol(int col) {
     }
 }
 SpreadSheetCell* SpreadSheet::getCell(int y, int x) const{
-    if (x > m_col  x < 0  y < 0 || y > m_row) {
+    if (x > m_col ||  x < 0 || y < 0 || y > m_row) {
         throw std::out_of_range("error: invalid coordinates");
     }
     return &m_cell[y][x];
